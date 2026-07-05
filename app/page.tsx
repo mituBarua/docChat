@@ -151,7 +151,7 @@ export default function Home() {
         <div className="p-4 pb-3">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#534AB7] to-[#7F77DD] flex items-center justify-center text-white text-sm">
-              ✦
+             ◆
             </div>
             <span className="text-white font-medium text-sm">
               <span className="text-[#AFA9EC]">Doc</span>Chat
@@ -285,7 +285,7 @@ export default function Home() {
         <div className="flex-1 overflow-auto p-5 flex flex-col gap-3.5">
           {messages.length === 0 && (
             <div className="flex-1 flex flex-col items-center justify-center gap-2 text-center">
-              <span className="text-3xl">✦</span>
+              <span className="text-3xl">◆</span>
               <div className="text-sm font-medium text-gray-700 dark:text-gray-300">Upload a document to get started</div>
               <div className="text-xs text-gray-400">Ask anything and AI will answer from your document</div>
             </div>
@@ -295,7 +295,7 @@ export default function Home() {
               <div className={`flex gap-2.5 items-start max-w-[80%] ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
                 {msg.role === 'assistant' && (
                   <div className="w-7 h-7 rounded-lg bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-xs text-blue-500">✦</span>
+                    <span className="text-xs text-blue-500">◆</span>
                   </div>
                 )}
                 <div
@@ -315,7 +315,7 @@ export default function Home() {
           {searching && (
             <div className="flex gap-2.5 items-start">
               <div className="w-7 h-7 rounded-lg bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 flex items-center justify-center flex-shrink-0">
-                <span className="text-xs text-blue-500">✦</span>
+                <span className="text-xs text-blue-500">◆</span>
               </div>
               <div className="px-3.5 py-3 bg-white dark:bg-[#1A1D2B] border border-gray-200 dark:border-gray-700 rounded-2xl rounded-tl-sm flex gap-1 items-center">
                 {[0, 1, 2].map(i => (
